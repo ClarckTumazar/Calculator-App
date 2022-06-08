@@ -1,0 +1,134 @@
+/* Media Queries for different size devices */
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .calculator-grid {
+    width:100%;
+    height: 400px;
+    padding: 10px;
+  }
+
+  button {
+    min-width: 50px;
+  }
+
+  .history {
+    width: 100%;
+
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .calculator-grid {
+    width: 75%;
+    height: 400px;
+  }
+
+  .history {
+    width: 75%;
+  }
+}
+
+/* Max height - when viewport is less than 780px tall calculator size should stop at  500px */
+@media only screen and (max-height: 780px) {
+  .calculator-grid {
+    min-height: 500px;
+  }
+  button {
+    font-size: 1.3rem;
+    min-height: 50px;
+  }
+  .prev-operand {
+    font-size: 1.2rem;
+  }
+  .current-operand {
+    font-size: 3.4rem;
+  }
+
+  .history {
+    min-height: 500px;
+    font-size: 1.5rem;
+  }
+
+  .history > header {
+    font-size: 1.5rem;
+  }
+
+  .clear-history {
+    font-size: 1rem;
+    border-radius: 1rem;
+  }
+
+  .expression {
+    font-size: 1.3rem;
+  }
+
+  .result {
+    font-size: 2rem;
+  }
+  
+}
+
+/* Max height - when viewport is atleast 1080px tall then calculator height should stop at 691px */
+@media only screen and (min-height: 1080px) {
+  .calculator-grid {
+    min-height: 691px;
+  }
+  button {
+    font-size: 2rem;
+  }
+  .prev-operand {
+    font-size: 1.2rem;
+  }
+  .current-operand {
+    font-size: 4.5rem;
+  }
+
+  .history {
+    height: 691px;
+    font-size: 1.5rem;
+  }
+  
+  .history > header {
+    font-size: 2.05rem;
+  }
+
+  .clear-history {
+    font-size: 1.35rem;
+    border-radius: 1.35rem;
+  }
+
+  .expression {
+    font-size: 1.75rem;
+  }
+
+  .result {
+    font-size: 2.6rem;
+  }
+}
+
+
+/* Max width - when viewport is atleast 1920px wide then calculator width should stop at 576px */
+@media only screen and (min-width: 1920px) {
+  .calculator-grid {
+    width: 576px;
+  }
+  button {
+    font-size: 2rem;
+  }
+  .prev-operand {
+    font-size: 1.2rem;
+  }
+  .current-operand {
+    font-size: 4.5rem;
+  }
+
+  .history {
+    width: 576px;
+  }
+  
+  .history > header {
+    font-size: 1.7rem;
+  }
+}

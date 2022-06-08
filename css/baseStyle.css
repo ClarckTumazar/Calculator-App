@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-weight: normal;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #252020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  background-color: rgba(66, 62, 62, 0);
+}

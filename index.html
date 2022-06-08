@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Calculator App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/baseStyle.css">
+    <link rel="stylesheet" href="css/calculatorPanel.css">
+    <link rel="stylesheet" href="css/historyPanel.css">
+    <link rel="stylesheet" href="css/mediaQuieries.css">
+  </head>
+  <body>
+
+    <!-- ties together the calculator and history -->
+      <main>
+        <!-- START calculator body -->
+          <div class="calculator-grid">
+
+            <!-- START output panel -->
+              <div class="output">
+                <div data-prev-operand class="prev-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+              </div>
+            <!-- END output panel --->
+
+              <button data-all-clear class="span-two">AC</button>
+              <button data-delete class="delete">DEL</button>
+              <button data-operation class="operators">÷</button>          <!-- OPERATORS -->
+              <button data-number>1</button>
+              <button data-number>2</button>
+              <button data-number>3</button>
+              <button data-operation class="operators">*</button>          <!-- OPERATORS -->
+              <button data-number>4</button>
+              <button data-number>5</button>
+              <button data-number>6</button>
+              <button data-operation class="operators">+</button>          <!-- OPERATORS -->
+              <button data-number>7</button>
+              <button data-number>8</button>
+              <button data-number>9</button>
+              <button data-operation class="operators">-</button>          <!-- OPERATORS -->
+              <button data-number>.</button>
+              <button data-number>0</button>
+              <button data-equals class="span-two equal-btn">=</button> <!-- OPERATORS -->
+
+          </div>
+        <!-- END calculator body -->
+
+        <!-- history panel -->
+          <div class="history">
+            <header>
+              <div>History</div>
+              <div data-clear-history class="clear-history">clear</div>
+            </header>
+            <div data-history class="history-body"></div>
+          </div>
+        <!-- history panel -->
+
+      </main>
+
+    <script src="index.js" async defer></script>
+  </body>
+</html>

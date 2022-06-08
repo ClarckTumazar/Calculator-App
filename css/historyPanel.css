@@ -1,0 +1,87 @@
+
+.history {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: Google sans;
+  font-size: 3vh;  
+  font-weight: bold;
+  background-color: rgb(49, 49, 49);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.history > header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 15px 10px;
+}
+
+.clear-history {
+  cursor: pointer;
+  font-size: 2vh;
+  padding: 7px 13px 7px 13px;
+  color: black;
+  background-color: beige;
+  border-radius: 2vh;
+}
+.clear-history:hover {
+  background-color: rgb(226, 226, 202);
+}
+
+.history-body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.history-body::-webkit-scrollbar {
+  width: 12px;
+}
+
+.history-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 12px 12px transparent;
+  border: solid 4px transparent;
+}
+
+
+.history-body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 12px 12px #6e6e6e4f;
+  border: solid 5px transparent;
+  border-radius: 12px;
+}
+/* set button(top and bottom of the scrollbar) */
+.history-body::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+
+.record {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 10px;
+}
+
+.expression {
+  font-size: 2.5vh;
+  color: rgb(196, 196, 196);
+  font-family: Inter thin;
+  }
+
+.result {
+  font-size: 3.8vh;
+}
+
